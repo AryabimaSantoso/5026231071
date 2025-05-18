@@ -1,0 +1,39 @@
+#navbar {
+  background-color: rgba(75, 75, 75, 0.3); /* warna gelap transparan */
+  backdrop-filter: blur(10px); /* efek blur kaca */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* opsional: bayangan lembut */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* garis bawah halus */
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 12px; /* lebih kecil dari default */
+}
+
+
+#navbar-logo img {
+  max-width: 100px;
+}
+
+#contact-us-btn {
+  border-radius: 40px;
+  font-size: 12px;
+  margin-right: 20px
+}
+
+.masthead {
+  background-image: url("images/main-image-adyawinsa.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.masthead-heading {
+  font-size: 60px;
+}
+
+.masthead-subheading {
+  font-size: 60px;
+}
