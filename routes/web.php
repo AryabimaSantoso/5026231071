@@ -5,6 +5,7 @@ use App\Http\Controllers\Link;
 use App\Http\Controllers\Pegawai2Controller;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\PlastikController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -53,6 +54,10 @@ Route::get('ets', function () {
 	return view('ets');
 });
 
+Route::get('template', function () {
+	return view('template');
+});
+
 Route::get('dosen', [Link::class, 'index'] );
 
 // Route::get('/pegawai/{nama}', [Pegawai2Controller::class, 'index'] );
@@ -74,4 +79,13 @@ Route::post('/pegawai/store', [PegawaiController::class,'store']);
 Route::get('/pegawai/edit/{id}', [PegawaiController::class,'edit']);
 Route::post('/pegawai/update', [PegawaiController::class,'update']);
 Route::post('/pegawai/hapus/{id}', [PegawaiController::class,'hapus']);
+
+// crud plastik
+Route::get('/plastik', [PlastikController::class, 'index'] );
+Route::get('/plastik/cari', [PlastikController::class, 'cari'] );
+Route::get('/plastik/tambah', [PlastikController::class, 'tambah'] );
+Route::post('/plastik/store', [PlastikController::class,'store']);
+Route::get('/plastik/edit/{id}', [PlastikController::class,'edit']);
+Route::post('/plastik/update', [PlastikController::class,'update']);
+Route::post('/plastik/hapus/{id}', [PlastikController::class,'hapus']);
 
