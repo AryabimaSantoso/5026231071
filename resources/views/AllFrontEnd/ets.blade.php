@@ -84,7 +84,7 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="masthead text-white d-flex align-items-center" style="background-image: url('images/main-image-adyawinsa.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
+        <header class="masthead text-white d-flex align-items-center" style="background-image: url('{{ asset('images/main-image-adyawinsa.png') }}'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
             <div class="masthead-content w-100">
               <div class="container px-5" id="header-text">
                 <h1 class="masthead-heading mb-3 display-1 fw-bold">ADYAWINSA</h1>

@@ -16,42 +16,46 @@ Route::get('halo', function () {
 });
 
 Route::get('blog', function () {
-	return view('blog');
+	return view('blog/blog');
 });
 
 Route::get('hello', [Link::class, 'helloworld'] );
 // Jika berupa controller gunakan []
 
-Route::get('pertama', function () {
-	return view('pertama');
+Route::get('AllFrontEnd/pertama', function () {
+	return view('AllFrontEnd.pertama');
 });
 
-Route::get('bootstrap1', function () {
-	return view('bootstrap1');
+Route::get('AllFrontEnd/bootstrap1', function () {
+	return view('AllFrontEnd.bootstrap1');
 });
 
-Route::get('pertemuan4', function () {
-	return view('pertemuan4');
+Route::get('AllFrontEnd/pertemuan4', function () {
+	return view('AllFrontEnd.pertemuan4');
 });
 
-Route::get('linktree', function () {
-	return view('linktree');
+Route::get('AllFrontEnd/linktree', function () {
+	return view('AllFrontEnd.linktree');
 });
 
-Route::get('js1', function () {
-	return view('js1');
+Route::get('AllFrontEnd/js1', function () {
+	return view('AllFrontEnd.js1');
 });
 
-Route::get('js2', function () {
-	return view('js2');
+Route::get('AllFrontEnd/js2', function () {
+	return view('AllFrontEnd.js2');
 });
 
-Route::get('danantara', function () {
-	return view('danantara');
+Route::get('AllFrontEnd/danantara', function () {
+	return view('AllFrontEnd.danantara');
 });
 
-Route::get('ets', function () {
-	return view('ets');
+Route::get('AllFrontEnd/ets', function () {
+    return view('AllFrontEnd.ets');
+});
+
+Route::get('allfrontend', function () {
+	return view('allfrontend');
 });
 
 Route::get('template', function () {

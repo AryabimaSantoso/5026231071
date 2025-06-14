@@ -15,36 +15,49 @@
     <style>
         .jumbotron {
             background-color: #9de2e2;
-            height: 100px;
+            height: 180px;
         }
     </style>
 </head>
 
 <body>
     <div class="jumbotron text-center mx-auto">
-        <h1>5026231071 : Aryabima Kurnia P. S.</h1>
+        <h1>All Front End</h1>
+        <h3>5026231071 : Aryabima Kurnia P. S.</h3>
     </div>
 
     <nav class="navbar navbar-expand-sm bg-light">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/allfrontend">All Front End</a>
+                <a class="nav-link" href="{{ url('/AllFrontEnd/bootstrap1') }}">bootstrap1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/pegawai">Pegawai</a>
+                <a class="nav-link" href="{{ url('/AllFrontEnd/danantara') }}">Danantara</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/plastik">Tugas CRUD</a>
+                <a class="nav-link" href="{{ url('/AllFrontEnd/ets') }}">ETS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">EAS</a>
+                <a class="nav-link" href="{{ url('/AllFrontEnd/js1') }}">js1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan Kode X2</a>
+                <a class="nav-link" href="{{ url('/AllFrontEnd/js2') }}">js2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/AllFrontEnd/linktree') }}">linktree</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/AllFrontEnd/pertama') }}">pertama</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/AllFrontEnd/pertemuan4') }}">pertemuan4</a>
             </li>
         </ul>
     </nav>
     <br>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <a href="/template">Back to Template</a>
+    </nav>
     <div class="container">
         @yield('content')
     </div>

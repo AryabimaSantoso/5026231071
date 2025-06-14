@@ -38,7 +38,7 @@
 
  <!-- -------- START HEADER 7 w/ text and video ------- -->
  <header class="bg-gradient-dark">
-    <div class="page-header min-vh-75" style="background-image: url('assets/img/hero-children-indo.png');">
+    <div class="page-header min-vh-75" style="background-image: url('{{ asset('assets/img/hero-children-indo.png'); }}') ">
       <span class="mask bg-gradient-dark opacity-6"></span>
       <div class="container">
         <div class="row justify-content-center">
@@ -90,7 +90,7 @@
                 <div class="col-lg-4 col-md-6 col-12 mt-n5">
                   <a href="javascript:;">
                     <div class="p-3 pe-md-0">
-                      <img class="w-100 border-radius-md shadow-lg" src="assets/img/president-prabowo.png" alt="image">
+                      <img class="w-100 border-radius-md shadow-lg" src="{{ asset('assets/img/president-prabowo.png'); }}" alt="image">
                     </div>
                   </a>
                 </div>
