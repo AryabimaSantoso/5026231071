@@ -40,7 +40,7 @@
                 <a class="nav-link" href="#">EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan Kode X2</a>
+                <a class="nav-link" href="/karyawan">Latihan Kode X2</a>
             </li>
         </ul>
     </nav>

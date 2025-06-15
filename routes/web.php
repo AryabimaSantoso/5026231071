@@ -6,6 +6,7 @@ use App\Http\Controllers\Pegawai2Controller;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PlastikController;
+use App\Http\Controllers\KaryawanController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -64,8 +65,6 @@ Route::get('template', function () {
 
 Route::get('dosen', [Link::class, 'index'] );
 
-// Route::get('/pegawai/{nama}', [Pegawai2Controller::class, 'index'] );
-
 Route::get('/formulir', [PegawaiController::class, 'formulir'] );
 
 Route::post('/formulir/proses', [PegawaiController::class, 'proses'] );
@@ -93,3 +92,8 @@ Route::get('/plastik/edit/{id}', [PlastikController::class,'edit']);
 Route::post('/plastik/update', [PlastikController::class,'update']);
 Route::post('/plastik/hapus/{id}', [PlastikController::class,'hapus']);
 
+// crud karyawan (Latihan EAS Kode X2)
+Route::get('/karyawan', [KaryawanController::class, 'index'] );
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah'] );
+Route::post('/karyawan/store', [KaryawanController::class,'store']);
+Route::post('/karyawan/hapus/{id}', [KaryawanController::class,'hapus']);
