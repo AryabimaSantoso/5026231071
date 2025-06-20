@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PlastikController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\NilaiController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -97,3 +98,9 @@ Route::get('/karyawan', [KaryawanController::class, 'index'] );
 Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah'] );
 Route::post('/karyawan/store', [KaryawanController::class,'store']);
 Route::post('/karyawan/hapus/{id}', [KaryawanController::class,'hapus']);
+
+// crud nilai (EAS)
+Route::get('/eas', [NilaiController::class, 'index'] );
+Route::get('/eas/tambah', [NilaiController::class, 'tambah'] );
+Route::post('/eas/store', [NilaiController::class,'store']);
+
